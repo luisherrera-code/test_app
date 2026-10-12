@@ -1,6 +1,4 @@
-// crea las rutas api que apuntan a http://test_api.test/api/contactos
-
-let baseApiUrl = "http://test_api.test/api";
+let baseApiUrl = import.meta.env.VITE_API_URL;
 
 export const getContactos = async () => {
     try {
